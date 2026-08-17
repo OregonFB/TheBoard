@@ -2331,6 +2331,23 @@ window.BOARD_CONFIG = {
     { id: "BUST", label: "Bust", color: "#FFD60A", text: "#14181F", tint: "rgba(255,214,10,0.07)" },
   ],
   staffGroups: _STAFF_GROUPS,
+  /* 2026 schedule (announced Jan 27, 2026; kick times per May 27, 2026
+     release — TBA games get times as the Big Ten announces them). Shown on
+     the calendar view. Times PT. */
+  games: [
+    { date: "2026-09-05", opponent: "Boise State",    short: "Boise St",     home: true,  time: "12:30 PM PT", tv: "CBS" },
+    { date: "2026-09-12", opponent: "Oklahoma State", short: "Okla St",      home: false, time: "9:00 AM PT",  tv: "ESPN" },
+    { date: "2026-09-18", opponent: "Portland State", short: "Portland St",  home: true,  time: "7:30 PM PT",  tv: "BTN" },
+    { date: "2026-09-26", opponent: "USC",                                   home: false },
+    { date: "2026-10-10", opponent: "UCLA",                                  home: true },
+    { date: "2026-10-17", opponent: "Nebraska",                              home: true },
+    { date: "2026-10-24", opponent: "Illinois",                              home: false },
+    { date: "2026-10-31", opponent: "Northwestern",                          home: true },
+    { date: "2026-11-07", opponent: "Ohio State",     short: "Ohio St",      home: false },
+    { date: "2026-11-14", opponent: "Michigan",                              home: true },
+    { date: "2026-11-20", opponent: "Michigan State", short: "Michigan St",  home: false, time: "5:00 PM PT",  tv: "FOX" },
+    { date: "2026-11-28", opponent: "Washington",                            home: true },
+  ],
   /* Board admins — the only people who can stack the MAIN board and view
      every staffer's personal board. Names must match staffGroups exactly.
      Everyone else gets the main board view-only plus their own board.
