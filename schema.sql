@@ -1,4 +1,8 @@
 -- The Board: shared storage table. Run this once in your Supabase project's SQL editor.
+-- One key/value table backs everything:
+--   board-<school>-players        shared player data (everyone reads/writes)
+--   board-<school>-stack::<name>  one staffer's personal board arrangement
+--   board-<school>               legacy single-doc board (auto-migrated on first load)
 create table if not exists boards (
   key text primary key,
   value text not null,
