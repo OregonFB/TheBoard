@@ -2335,7 +2335,11 @@ window.BOARD_CONFIG = {
      every staffer's personal board. Names must match staffGroups exactly.
      Everyone else gets the main board view-only plus their own board.
      (Player info, call logs, evals, and photos stay editable by all staff.) */
-  boardAdmins: ["Lanning HC", "Malchow CoS", "Dean GM"],
+  boardAdmins: [
+    "Lanning HC", "Malchow CoS", "Dean GM",
+    // temporary — main testers, remove when testing wraps:
+    "Abeln Def Personnel", "DiMario Off Personnel",
+  ],
   seedProspects: [..._REAL_COMMITS, ..._OFFERED_TARGETS],
   staffPassword: "Recruit26", // change before sharing with staff
   // Shared cloud board (multi-user sync): create a free Supabase project,
