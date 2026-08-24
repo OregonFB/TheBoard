@@ -2362,6 +2362,9 @@ window.BOARD_CONFIG = {
   /* Shared cloud board — live multi-user sync (boards, evals, calls, notes,
      passwords, deactivations) across every device. Publishable key is safe
      to ship; RLS + schema live in template/schema.sql. */
+  /* Marketing plan on player profiles: Oregon uses a 0–4 tier dropdown
+     (other schools default to a free-text plan box). */
+  marketingPlan: { type: "select", options: [0, 1, 2, 3, 4], label: "Marketing Plan" },
   /* DEDICATED Supabase project (Supabase Auth mode) — real server-side
      accounts; the anon key alone reads nothing. Migrated Aug 2026. */
   supabase: {
